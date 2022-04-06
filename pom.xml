@@ -32,7 +32,17 @@
   <build>
     <plugins>
       <plugin>
-        <artifactId>maven-compiler-plugin</artifactId>
+        <artifactId>maven-compiler-plugin</artifactId><repository>
+  <id>Demo</id>
+  <url>https://pkgs.dev.azure.com/renusingh/demo/_packaging/Demo/maven/v1</url>
+  <releases>
+    <enabled>true</enabled>
+  </releases>
+  <snapshots>
+    <enabled>true</enabled>
+  </snapshots>
+</repository>
+               
         <configuration>
           <source>1.8</source>
           <target>1.8</target>
